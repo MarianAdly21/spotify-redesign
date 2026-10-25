@@ -3,7 +3,7 @@ import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:spotify_redesign/app_router.dart';
-import 'package:spotify_redesign/common/widget/button/app_elvated_button.dart';
+import 'package:spotify_redesign/common/widget/button/app_elevated_button.dart';
 import 'package:spotify_redesign/core/config/app_assets.dart';
 import 'package:spotify_redesign/core/config/app_color.dart';
 
@@ -64,7 +64,6 @@ class GetStartedScreen extends StatelessWidget {
                     context.go(AppRouter.chooseModeScreen);
                   },
                   title: "Get started",
-                  backgroundColor: AppColor.primary,
                 ),
               ],
             ),
