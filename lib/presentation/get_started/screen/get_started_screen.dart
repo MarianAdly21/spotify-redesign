@@ -61,6 +61,7 @@ class GetStartedScreen extends StatelessWidget {
                 ),
                 AppElvatedButton(
                   onPressed: () {
+                   
                     context.go(AppRouter.chooseModeScreen);
                   },
                   title: "Get started",

@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:spotify_redesign/common/helper/bloc_observer/app_bloc_observer.dart';
 import 'package:spotify_redesign/my_app.dart';
 
 Future<void> main() async {
@@ -11,5 +12,6 @@ Future<void> main() async {
         ? HydratedStorageDirectory.web
         : HydratedStorageDirectory((await getTemporaryDirectory()).path),
   );
+  Bloc.observer = AppBlocObserver();
   runApp(const SpotifyApp());
 }
