@@ -1,4 +1,6 @@
-import 'package:spotify_redesign/presentation/auth/screens/signup_or_signin_screen.dart';
+import 'package:spotify_redesign/presentation/auth/sign_in/screen/sign_in_screen.dart';
+import 'package:spotify_redesign/presentation/auth/screens/sign_up_or_signin_screen.dart';
+import 'package:spotify_redesign/presentation/auth/signup/screen/sign_up_screen.dart';
 import 'package:spotify_redesign/presentation/choose_mode/screen/choose_mode_screen.dart';
 import 'package:spotify_redesign/presentation/get_started/screen/get_started_screen.dart';
 import 'package:spotify_redesign/presentation/splash/splash_screen.dart';
@@ -9,6 +11,8 @@ class AppRouter {
   static const getStartedScreen = "/get-started-screen";
   static const chooseModeScreen = "/choose-mode-screen";
   static const signupOrSigninScreen = "/signup-or-signin-screen";
+  static const signupScreen = "/signup-screen";
+  static const signinScreen = "/signin-screen";
 
   static GoRouter router = GoRouter(
     routes: [
@@ -23,8 +27,9 @@ class AppRouter {
       ),
       GoRoute(
         path: signupOrSigninScreen,
-        builder: (context, state) => SignupOrSigninScreen(),
+        builder: (context, state) => SignUpOrSignInScreen(),
       ),
-    ],
+      GoRoute(path: signupScreen, builder: (context, state) => SignUpScreen()),
+  GoRoute(path: signinScreen,builder: (context, state) => SignInScreen(),)  ],
   );
 }
