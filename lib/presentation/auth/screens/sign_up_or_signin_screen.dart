@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
+import 'package:spotify_redesign/app_router.dart';
 import 'package:spotify_redesign/common/helper/extensions/is_dark_mode_extention.dart';
 import 'package:spotify_redesign/common/widget/app_bar/basic_app_bar.dart';
 import 'package:spotify_redesign/common/widget/button/app_elevated_button.dart';
 import 'package:spotify_redesign/core/config/app_assets.dart';
 import 'package:spotify_redesign/core/config/app_color.dart';
 
-class SignupOrSigninScreen extends StatelessWidget {
-  const SignupOrSigninScreen({super.key});
+class SignUpOrSignInScreen extends StatelessWidget {
+  const SignUpOrSignInScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -82,13 +83,17 @@ class SignupOrSigninScreen extends StatelessWidget {
                   Expanded(
                     child: AppElvatedButton(
                       title: "Register",
-                      onPressed: () {},
+                      onPressed: () {
+                        context.push(AppRouter.signupScreen);
+                      },
                     ),
                   ),
                   SizedBox(width: 60.w),
                   Expanded(
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        context.push(AppRouter.signinScreen);
+                      },
                       child: Text(
                         "Sign in",
                         style: TextStyle(

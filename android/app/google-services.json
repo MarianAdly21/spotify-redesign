@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "23452782078",
+    "project_id": "spotify-redesign-app",
+    "storage_bucket": "spotify-redesign-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23452782078:android:aaf51f8f74bad2eeb484af",
+        "android_client_info": {
+          "package_name": "com.example.spotify_redesign"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDChW5viiWN9VQcH4q1Syq85Gb_GAs5h7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
